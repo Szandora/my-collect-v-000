@@ -1,14 +1,11 @@
 
-def collect
-  if block_given?
+def collect(array)
   i = 0
-
+  collection = []
   while i < array.length
-    yield array[i]
-    i = i + 1
+    collection << yield(array[i])
+    i += 1
   end
-  array
-else
-  "Hey! No block was given!"
+  collection
 end
 end
