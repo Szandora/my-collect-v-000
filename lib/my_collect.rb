@@ -1,7 +1,7 @@
 
 def collect
-array = []
-my_collect(array) do |name|
-  name.reverse!
-end
+  collection = ['ruby', 'javascript', 'python', 'objective-c']
+  my_collect(collection) do |lang|
+    lang.uppercase
+  end
 end
